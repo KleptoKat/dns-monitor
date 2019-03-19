@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto min-content min-content auto;
+    grid-template-rows: auto 200px 100px auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* logo */
+.logo {
+    grid-area: 2 / 2 / span 1 / span 2;
+    align-items: center;
+    display: flex;
+}
+
+.logo img {
+    height: 100%;
+    margin: auto;
+}
+
+/* time */
+.time {
+    grid-area: 3 / 2 / span 1 / span 2;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+
+#a {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+}
