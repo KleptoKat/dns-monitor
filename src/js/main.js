@@ -14,7 +14,7 @@ function displayTime() {
 }
 
 function doReload() {
-    location.reload();
+    window.location.reload(true);
 }
 
 displayTime();
