@@ -1,3 +1,5 @@
+const CLOCK_UPDATE = 500;
+const RELOAD = 60000;
 
 function displayTime() {
     var d = new Date();
@@ -11,5 +13,10 @@ function displayTime() {
     y.innerHTML= h2 + ":" + m2 + ":" + s2;
 }
 
+function doReload() {
+    location.reload();
+}
+
 displayTime();
-setInterval(displayTime, 1000);
+setInterval(displayTime, CLOCK_UPDATE);
+setInterval(doReload, RELOAD);
