@@ -1,5 +1,5 @@
 const CLOCK_UPDATE = 500;
-const RELOAD = 1000;
+const RELOAD = 60000;
 
 function displayTime() {
     var d = new Date();
